@@ -1,60 +1,52 @@
 {
   "movies": [
     {
-      "id": 1,
-      "title": "Black Widow",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
-      "rating": 7.8,
-      "type": "movie"
+      "id": "1",
+      "title": "Inception",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "rating": 8.8,
+      "type": "Movie",
+      "releaseDate": "2010-07-16",
+      "runTime": 148,
+      "genres": ["Action", "Adventure", "Sci-Fi"],
+      "posterImage": "https://example.com/inception-poster.jpg",
+      "bannerImage": "https://example.com/inception-banner.jpg"
     },
     {
-      "id": 2,
-      "title": "Shang-Chi",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg",
-      "rating": 7.9,
-      "type": "movie"
+      "id": "2",
+      "title": "The Dark Knight",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "rating": 9.0,
+      "type": "Movie",
+      "releaseDate": "2008-07-18",
+      "runTime": 152,
+      "genres": ["Action", "Crime", "Drama"],
+      "posterImage": "https://example.com/dark-knight-poster.jpg",
+      "bannerImage": "https://example.com/dark-knight-banner.jpg"
     },
     {
-      "id": 3,
-      "title": "Loki",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
-      "rating": 8.4,
-      "type": "tv"
+      "id": "3",
+      "title": "Breaking Bad",
+      "description": "A high school chemistry teacher turned methamphetamine manufacturer partners with a former student to secure his family's financial future as he battles terminal lung cancer.",
+      "rating": 9.5,
+      "type": "TV Show",
+      "releaseDate": "2008-01-20",
+      "runTime": 45,
+      "genres": ["Crime", "Drama", "Thriller"],
+      "posterImage": "https://example.com/breaking-bad-poster.jpg",
+      "bannerImage": "https://example.com/breaking-bad-banner.jpg"
     },
     {
-      "id": 4,
-      "title": "How I Met Your Mother",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg",
-      "rating": 8.3,
-      "type": "tv"
-    },
-    {
-      "id": 5,
-      "title": "Money Heist",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
-      "rating": 8.3,
-      "type": "tv"
-    },
-    {
-      "id": 6,
-      "title": "Friends",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/f496cm9enuEsZkSPzCwnTESEK5s.jpg",
-      "rating": 8.4,
-      "type": "tv"
-    },
-    {
-      "id": 7,
-      "title": "The Big Bang Theory",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/ooBGRQBdbGzBxAVfExiO8r7kloA.jpg",
-      "rating": 8.1,
-      "type": "tv"
-    },
-    {
-      "id": 8,
-      "title": "Two And a Half Men",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/dPqxgdPhTB7NSG5kOXcjyLhde6o.jpg",
-      "rating": 7.1,
-      "type": "tv"
+      "id": "4",
+      "title": "Stranger Things",
+      "description": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.",
+      "rating": 8.7,
+      "type": "TV Show",
+      "releaseDate": "2016-07-15",
+      "runTime": 50,
+      "genres": ["Drama", "Fantasy", "Horror"],
+      "posterImage": "https://example.com/stranger-things-poster.jpg",
+      "bannerImage": "https://example.com/stranger-things-banner.jpg"
     }
   ]
 }

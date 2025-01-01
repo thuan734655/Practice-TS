@@ -13,10 +13,11 @@ interface Media {
 
 export class MediaModel {
     private data: Media[] = [];
+    private readonly API_URL = 'http://localhost:3003/movies';
 
     async fetchData(): Promise<void> {
         try {
-            const response = await fetch('http://localhost:3001/movies');
+            const response = await fetch(this.API_URL);
             const jsonData = await response.json();
             this.data = jsonData;
             console.log('Fetched data:', this.data); // Debug log
@@ -40,5 +41,17 @@ export class MediaModel {
 
     filterByGenre(genre: string): Media[] {
         return this.data.filter(item => item.genres.includes(genre));
+    }
+
+    searchMedia(query: string): Media[] {
+        return this.data.filter(item => item.title.toLowerCase().includes(query.toLowerCase()) || item.description.toLowerCase().includes(query.toLowerCase()));
+    }
+
+    sortMediaByRating(): Media[] {
+        return this.data.sort((a, b) => b.rating - a.rating);
+    }
+
+    sortMediaByReleaseDate(): Media[] {
+        return this.data.sort((a, b) => new Date(a.releaseDate) - new Date(b.releaseDate));
     }
 }

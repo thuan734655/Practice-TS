@@ -12,9 +12,11 @@ export class MediaController {
 
     async initialize(): Promise<void> {
         try {
+            this.view.showLoading();
             await this.model.fetchData();
             this.displayAllMedia();
         } catch (error) {
+            console.error('Initialization error:', error);
             this.view.showError('Failed to load media content');
         }
     }
@@ -32,5 +34,20 @@ export class MediaController {
     filterByGenre(genre: string): void {
         const filteredMedia = this.model.filterByGenre(genre);
         this.view.render(filteredMedia);
+    }
+
+    searchMedia(query: string): void {
+        const searchResults = this.model.searchMedia(query);
+        this.view.render(searchResults);
+    }
+
+    sortByRating(): void {
+        const sortedMedia = this.model.sortMediaByRating();
+        this.view.render(sortedMedia);
+    }
+
+    sortByReleaseDate(): void {
+        const sortedMedia = this.model.sortMediaByReleaseDate();
+        this.view.render(sortedMedia);
     }
 }

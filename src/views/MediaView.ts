@@ -26,6 +26,7 @@ export class MediaView {
                 <div class="media-genres">
                     ${item.genres.map((genre: string) => `<span class="genre-tag">${genre}</span>`).join('')}
                 </div>
+                <p class="media-description">${item.description}</p>
             </div>
         `;
         return card;
@@ -56,5 +57,9 @@ export class MediaView {
     showError(message: string): void {
         console.error('Showing error:', message); // Debug log
         this.container.innerHTML = `<div class="error-message">${message}</div>`;
+    }
+
+    showLoading(): void {
+        this.container.innerHTML = '<div class="loading">Loading...</div>';
     }
 }
