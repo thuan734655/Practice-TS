@@ -86,7 +86,7 @@
       .subNav-container--btn-movies {
         @include set-size($w: pxToRem(132), $h: pxToRem(40));
       }
-      .subNav-container--btn-tvShows {
+      .subNav-container--btn-tv-shows {
         @include set-size($w: pxToRem(144), $h: pxToRem(40));
       }
     }
@@ -100,6 +100,7 @@
     );
     letter-spacing: -0.64px;
     margin-top: pxToRem(32);
+    margin-left: pxToRem(10);
 
     span {
       @include font(
