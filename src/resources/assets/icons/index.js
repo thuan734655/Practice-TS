@@ -7,3 +7,4 @@ export { default as IcLogo } from './ic-logo.svg';
 export { default as IcStar } from './ic-star.svg';
 export { default as IcKeySquare } from './key-square.svg';
 export { default as IcLogout } from './logout.svg';
+export { default as ICSearch} from './search.svg';
